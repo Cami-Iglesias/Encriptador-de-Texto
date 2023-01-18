@@ -4,11 +4,11 @@ const buttonCopy = document.querySelector(".boton-copiar");
 
 buttonToEncrypt.onclick = function() {
 
-    let text = document.querySelector("#text").value;
+    let text = document.querySelector("#texto").value;
     let lowerCaseText = text.toLowerCase()
     let longitudTexto = text.length;
     let result = ""
-    document.querySelector("#text-encriptado").innerHTML = "";
+    document.querySelector("#texto-encriptado").innerHTML = "";
     
     for(let i=0; i < longitudTexto; i++){
 
@@ -33,13 +33,13 @@ buttonToEncrypt.onclick = function() {
         }
     }
     
-    document.querySelector("#text-encriptado").innerHTML = result;
+    document.querySelector("#texto-encriptado").innerHTML = result;
     
 }
 
 buttonToDecrypt.onclick = function() {
     
-    let EncryptedTxt = document.querySelector("#text").value;
+    let EncryptedTxt = document.querySelector("#texto").value;
     let lowerCaseEncryptedTxt = EncryptedTxt.toLowerCase();
     let longitudTexto = EncryptedTxt.length;
 
@@ -68,13 +68,13 @@ buttonToDecrypt.onclick = function() {
     }
  }
 
-document.querySelector("#text-encriptado").innerHTML = lowerCaseEncryptedTxt;
+document.querySelector("#texto-encriptado").innerHTML = lowerCaseEncryptedTxt;
     
 }
 
 buttonCopy.onclick = function() {
 
-    let textToCopy = document.querySelector("#text-encriptado").value;
+    let textToCopy = document.querySelector("#texto-encriptado").value;
     navigator.clipboard.writeText(textToCopy);
 
 }
