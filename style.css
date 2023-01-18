@@ -1,0 +1,108 @@
+body{
+    background-size: 100%;
+    background-image: url(/img/pexels-dio-alif-utomo-1525589.jpg);
+    font-family: 'Inconsolata', monospace;
+}
+
+header{
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.titulo{
+    color: black;
+    font-size: 2em;
+    text-align: center;
+}
+
+.formulario{
+    height: 500px;
+    display: flex;
+    justify-content: center ;
+}
+
+.titulo-secundario{
+    color: antiquewhite;
+    margin: 0 0 10px 100px;
+}
+
+#text, #text-encriptado{
+    resize: none;
+}
+
+.textarea-encriptar, .textarea-encriptado {
+    background-color: black;
+    
+    width: 500px;
+    color: antiquewhite;
+}
+
+.encriptar, .desencriptar, .boton-copiar{
+    background-color: black;
+    color: antiquewhite;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+.encriptar:hover, .desencriptar:hover, .boton-copiar:hover{
+    background-color: antiquewhite;
+    color: black;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: antiquewhite;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px){
+body{
+    width: auto;
+    display: grid;
+    
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    font-size: 80%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.titulo-secundario{
+    width: 50%;
+    font-size: 100%;
+    margin-left: 1%;
+}
+
+.textarea-encriptar, .textarea-encriptado{
+    width: 100%;
+}
+
+.button{
+    width: auto;
+}
+
+footer{
+    width: 100%;
+    font-size: 70%;
+}
+}
