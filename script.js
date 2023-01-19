@@ -5,9 +5,9 @@ const buttonCopy = document.querySelector(".boton-copiar");
 buttonToEncrypt.onclick = function() {
 
     let text = document.querySelector("#texto").value;
-    let lowerCaseText = text.toLowerCase()
+    let lowerCaseText = text.toLowerCase();
     let longitudTexto = text.length;
-    let result = ""
+    let result = "";
     document.querySelector("#texto-encriptado").innerHTML = "";
     
     for(let i=0; i < longitudTexto; i++){
