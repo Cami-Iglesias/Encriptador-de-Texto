@@ -1,7 +1,8 @@
 body{
-    background-size: 100%;
-    background-image: url(/img/background.jpg);
     font-family: 'Inconsolata', monospace;
+    background-size: 100%;
+    background: linear-gradient(#000000, #000000, #f7e1c5,#000000 );
+
 }
 
 header{
@@ -32,10 +33,10 @@ header{
 }
 
 .textarea-encriptar, .textarea-encriptado {
-    background-color: black;
-    
+    background-color: antiquewhite;
+    font-size: 13px;
     width: 500px;
-    color: antiquewhite;
+    color: black;
 }
 
 .encriptar, .desencriptar, .boton-copiar{
